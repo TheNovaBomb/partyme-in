@@ -1,0 +1,737 @@
+/*! HTML5 Boilerplate v7.1.0 | MIT License | https://html5boilerplate.com/ */
+html {
+	color: #222;
+	font-size: 1em;
+	line-height: 1.4
+}
+::-moz-selection {
+	background: #b3d4fc;
+	text-shadow: none
+}
+::selection {
+	background: #b3d4fc;
+	text-shadow: none
+}
+img {
+	vertical-align: middle
+}
+.browserupgrade {
+	margin: .2em 0;
+	background: #ccc;
+	color: #000;
+	padding: .2em 0
+}
+body {
+	font-family: Quicksand, sans-serif;
+	font-weight: 300
+}
+h1, h2, h3, h4, h5, h6 {
+	font-weight: 500
+}
+.header-container {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	padding: 2.3em 0;
+	top: 0;
+	z-index: 99;
+	position: sticky;
+	background-color: transparent;
+	-webkit-transition: background .3s linear, padding .3s linear;
+	-moz-transition: background .3s linear, padding .3s linear;
+	-ms-transition: background .3s linear, padding .3s linear;
+	-o-transition: background .3s linear, padding .3s linear;
+	transition: background .3s linear, padding .3s linear;
+	margin: auto;
+	width: 35em;
+	position: absolute
+}
+.transition-fade {
+	opacity: 1;
+	transition: 0.4s;
+}
+html.is-animating .transition-fade {
+	opacity: 0;
+}
+.transition-up {
+	transition: .4s;
+	transform: translateY(0);
+}
+html.is-animating .transition-up {
+	opacity: 0;
+	transform: translateY(100px);
+}
+.transition-down {
+	transition: .4s;
+	transform: translateY(0);
+}
+html.is-animating .transition-down {
+	opacity: 0;
+	transform: translateY(-100px);
+}
+.transition-left {
+	transition: .4s;
+	transform: translateX(0);
+}
+html.is-animating .transition-left {
+	opacity: 0;
+	transform: translateX(-100px);
+}
+.transition-right {
+	transition: .4s;
+	transform: translateX(0);
+}
+html.is-animating .transition-right {
+	opacity: 0;
+	transform: translateX(100px);
+}
+#aboutTitle {
+	position: absolute;
+	opacity: .8;
+	margin-top: 46%;
+	margin-left: 6.7%;
+	font-size: 2.5em;
+	font-weight: 600;
+}
+#aboutDescription {
+	position: absolute;
+	font-size: 1.4em;
+	width: 80%;
+	margin-top: 60%;
+	opacity: .8;
+	margin-left: 15%;
+	text-align: center;
+	line-height: 2
+}
+#iphoneHome {
+	position: absolute;
+	width: 135%;
+	margin-left: 12%;
+	margin-top: 50%
+}
+#text {
+	position: absolute;
+	text-align: center;
+	margin-left: 6%;
+	margin-top: 105%
+}
+#homeTitle {
+	font-size: 4em;
+	font-weight: 600;
+	opacity: .8
+}
+#homeDescription {
+	font-size: 1.5em;
+	margin-top: -10%;
+	opacity: .8;
+	font-weight: 600
+}
+#iphoneContact {
+	position: absolute;
+	width: 120%;
+	margin-left: -20%;
+	margin-top: 65%
+}
+#contactText {
+	position: absolute;
+	margin-top: 10%;
+	margin-left: 10%
+}
+#contactTitle {
+	opacity: .8;
+	font-weight: 600;
+	font-size: 2.2em;
+	margin-top: 30%;
+	margin-left: -3%;
+}
+#contactDescription {
+	margin-left: 18%;
+	opacity: .8;
+	font-size: 1.5em;
+	width: 100%;
+	margin-top: -5%
+}
+body {
+	overflow: hidden
+}
+#swup .bg {
+	width: 200%;
+	height: 150%;
+	margin-top: -8%;
+	position: absolute;
+	margin: auto
+}
+#swup a {
+	color: inherit
+}
+#iphoneLeft {
+	position: absolute;
+	width: 117%;
+	margin-top: 109%;
+	margin-left: -13%
+}
+.logo {
+	margin-left: 2%
+}
+.logo img {
+	width: 75px;
+	height: 75px;
+	display: inline-flex
+}
+header ul li {
+	display: inline-block;
+	padding: 0 0.7em 0 0;
+	font-size: 1.3em;
+	padding-top: 5%;
+	font-weight: 500
+}
+header ul li a {
+	text-decoration: none;
+	color: rgba(255, 247, 0, .95);
+	-webkit-transition: all .2s linear;
+	-moz-transition: all .2s linear;
+	-ms-transition: all .2s linear;
+	-o-transition: all .2s linear;
+	transition: all .2s linear
+}
+li a.active {
+	color: #000;
+	border-bottom: 2px solid #000;
+	font-weight: 500
+}
+li a:hover {
+	color: #d6d286
+}
+nav {
+	align-self: center;
+	margin-right: 33%
+}
+a {
+	text-decoration: none
+}
+#title {
+	display: none
+}
+a:visited #title {
+	color: #343333
+}
+#about-container {
+	margin-top: 1%;
+	width: 75%
+}
+#contact-container h1 {
+	font-size: 4em;
+	border-bottom: solid rgba(38, 176, 200, .95)
+}
+#contact-container {
+	margin-left: 11.5%;
+	width: 75%
+}
+@media screen and (max-width: 321px) {
+	nav {
+		position: absolute;
+		margin-left: 11%;
+	}
+	header ul li {
+		padding: 0 0.3em 0 0;
+	}
+}
+@media screen and (max-width: 400px) and (max-height: 569px) {
+	#iphoneHome {
+		margin-top: 45%;
+	}
+	#text {
+		margin-left: 4%;
+		margin-top: 100%;
+	}
+	#homeTitle {
+		font-size: 3.5em;
+	}
+	#iphoneLeft {
+		width: 105%;
+		margin-top: 112%;
+		margin-left: -6%;
+	}
+	#aboutTitle {
+		margin-top: 38%;
+	}
+	#aboutDescription {
+		font-size: 1.3em;
+		width: 91%;
+		margin-top: 53%;
+		margin-left: 6%;
+	}
+	#contactDescription {
+		margin-left: 5%;
+	}
+}
+@media screen and (min-width: 450px) {
+	.logo {
+		margin-left: 7%;
+	}
+	nav {
+		margin-right: 5em;
+		margin-top: 0.5%;
+	}
+	header ul li {
+		padding: 0 1em 0 0;
+	}
+	#text {
+		margin-left: 13%
+}
+}
+@media screen and (min-width: 500px) {
+	.logo {
+		margin-left: 7%;
+	}
+	header ul li {
+		padding: 0 1em 0 0;
+	}
+	#text {
+		margin-left: 13%
+}
+	#iphoneLeft {
+		width: 110%;
+		margin-top: 90%;
+		margin-left: -10%;
+	}
+	#aboutTitle {
+		margin-top: 33%;
+		font-size: 3em;
+	}
+	#aboutDescription {
+		font-size: 1.6em;
+		width: 85%;
+		margin-top: 47%;
+		margin-left: 12%;
+	}
+}
+@media screen and (min-width:560px) {
+	.header-container {
+		width: 100%
+}
+	#iphoneHome {
+		width: 130%;
+		margin-top: 40%;
+	}
+	#text {
+		margin-left: 24%;
+		margin-top: 95%;
+	}
+	#contactTitle {
+		margin-top: 20%;
+		font-size: 2.5em;
+	}
+	#contactDescription {
+		margin-left: 0%;
+	}
+	#iphoneContact {
+		margin-top: 35%;
+	}
+}
+@media only screen and (min-width: 600px) {
+	#aboutTitle {
+		margin-top: 26%;
+	}
+	#aboutDescription {
+		margin-top: 38%;
+	}
+	#iphoneLeft {
+		margin-top: 71%;
+		width: 90%;
+		margin-left: -7%;
+	}
+}
+@media screen and (min-width: 650px) {
+	#iphoneHome {
+		margin-top: 35%;
+		width: 95%;
+		margin-left: 22%;
+	}
+	#text {
+		margin-left: 24%;
+		margin-top: 74%;
+	}
+}
+@media screen and (min-width:768px) {
+	.header-container {
+		width: 100%
+}
+	nav {
+		margin-right: 3em;
+	}
+	#title {
+		display: inline-flex;
+		margin-left: .5em;
+		align-self: center;
+		font-weight: 700;
+		font-size: 2em;
+		vertical-align: -webkit-baseline-middle;
+		color: #343333
+}
+	#text {
+		margin-left: 28%;
+		font-size: 1em;
+		margin-top: 57%;
+	}
+	#iphoneHome {
+		width: 85%;
+		margin-left: 25%;
+		margin-top: 22%;
+	}
+	#aboutTitle {
+		margin-top: 20%;
+		font-size: 3.3em;
+	}
+	#aboutDescription {
+		margin-top: 30%;
+		width: 70%;
+		font-size: 1.8em;
+		margin-left: 20%;
+	}
+	#iphoneLeft {
+		margin-top: 55%;
+		margin-left: -3%;
+		width: 68%;
+	}
+	#contactTitle {
+		font-size: 3em;
+		margin-top: 15%;
+	}
+	#contactDescription {
+		font-size: 1.8em;
+		margin-left: 17%;
+	}
+	#iphoneContact {
+		width: 105%;
+		margin-left: -5%;
+		margin-top: 30%;
+	}
+}
+@media only screen and (min-width: 950px) {
+	#iphoneLeft {
+		width: 60%;
+		margin-top: 43%;
+		margin-left: 0%;
+	}
+	#aboutTitle {
+		margin-top: 20%;
+		font-size: 3.5em;
+		margin-left: 9.7%;
+	}
+	#aboutDescription {
+		margin-top: 27%;
+		width: 60%;
+		margin-left: 25%;
+	}
+	#contactTitle {
+		font-size: 3em;
+		margin-top: 10%;
+	}
+	#contactDescription {
+		font-size: 2em;
+		margin-left: 12%;
+	}
+	#iphoneContact {
+		width: 95%;
+		margin-left: 0%;
+		margin-top: 25%;
+	}
+}
+@media screen and (min-width: 1024px) {
+	#iphoneHome {
+		width: 75%;
+		margin-left: 27%;
+		margin-top: 20%;
+	}
+	#text {
+		margin-left: 32%;
+		font-size: 1.1em;
+		margin-top: 50%;
+	}
+}
+@media screen and (min-width: 1080px) {
+	#iphoneContact {
+		width: 93%;
+		margin-left: 5%;
+		margin-top: 18%;
+	}
+}
+@media screen and (min-width: 1200px) {
+	#iphoneHome {
+		width: 60%;
+		margin-left: 33%;
+		margin-top: 14%;
+	}
+	#text {
+		margin-left: 36.5%;
+		margin-top: 39%;
+	}
+	#aboutTitle {
+		margin-top: 15%;
+		font-size: 4em;
+		margin-left: 10.7%;
+	}
+	#aboutDescription {
+		margin-top: 23%;
+		width: 57%;
+		font-size: 2em;
+		margin-left: 27%;
+	}
+	#iphoneLeft {
+		width: 50%;
+		margin-top: 35%;
+	}
+	#iphoneContact {
+		width: 85%;
+		margin-left: 15%;
+		margin-top: 15%;
+	}
+}
+@media screen and (min-width: 1366px) {
+	#iphoneHome {
+		position: absolute;
+		width: 55%;
+		margin-left: 34%;
+		margin-top: 12%
+}
+	#text {
+		position: absolute;
+		text-align: center;
+		margin-left: 37%;
+		margin-top: 37.5%;
+		font-size: 1.1em;
+	}
+	#iphoneLeft {
+		width: 50%;
+		margin-top: 24%;
+		margin-left: 0%;
+	}
+	#aboutDescription {
+		position: absolute;
+		font-size: 2.5em;
+		margin-top: 17%;
+		opacity: .8;
+		margin-left: 37%;
+		text-align: center;
+		line-height: 2
+}
+	#aboutTitle {
+		position: absolute;
+		opacity: .8;
+		margin-top: 10%;
+		margin-left: 9.7%;
+		font-size: 5em;
+		font-weight: 600
+}
+	#contactTitle {
+		font-size: 4em;
+		margin-top: 5%;
+		margin-left: -5%;
+	}
+	#contactDescription {
+		font-size: 2.2em;
+		margin-left: 13%;
+	}
+	#iphoneContact {
+		width: 75%;
+		margin-left: 28%;
+		margin-top: 5%;
+	}
+}
+@media screen and (min-width: 1500px) {
+	#iphoneHome {
+		width: 55%;
+		margin-left: 32%;
+	}
+	#text {
+		margin-left: 36%;
+		margin-top: 36%;
+	}
+	#iphoneLeft {
+		margin-top: 23%;
+		width: 45%;
+	}
+}
+@media screen and (min-width:1700px) {
+	#aboutTitle {
+		position: absolute;
+		opacity: .8;
+		margin-top: 10%;
+		margin-left: 9.7%;
+		font-size: 6em;
+		font-weight: 600
+}
+	#aboutDescription {
+		position: absolute;
+		font-size: 3em;
+		width: 52%;
+		margin-top: 17%;
+		opacity: .8;
+		margin-left: 39%;
+		text-align: center;
+		line-height: 2
+}
+	#iphoneHome {
+		position: absolute;
+		width: 50%;
+		margin-left: 33%;
+		margin-top: 12%
+}
+	#text {
+		position: absolute;
+		text-align: center;
+		margin-left: 37.5%;
+		margin-top: 33%;
+		font-size: 1.2em;
+	}
+	#iphoneContact {
+		position: absolute;
+		width: 60%;
+		margin-left: 40%;
+		margin-top: 7%
+}
+	#contactText {
+		position: absolute;
+		margin-top: 10%;
+		margin-left: 10%
+}
+	#contactTitle {
+		opacity: .8;
+		font-weight: 600;
+		font-size: 5em;
+		margin-left: 0%;
+	}
+	#contactDescription {
+		margin-left: 20%;
+		opacity: .8;
+		font-size: 2.5em;
+		width: 100%;
+		margin-top: -5%
+}
+	body {
+		overflow: hidden
+}
+	#swup .bg {
+		width: 200%;
+		height: 150%;
+		margin-top: -8%;
+		position: absolute;
+		margin: auto
+}
+	#swup a {
+		color: inherit
+}
+	#iphoneLeft {
+		position: absolute;
+		width: 40%;
+		margin-top: 20%;
+		margin-left: 4%
+}
+	body {
+		font-family: Quicksand, sans-serif;
+		font-weight: 300
+}
+	h1, h2, h3, h4, h5, h6 {
+		font-weight: 500
+}
+	.logo {
+		margin-left: 10%
+}
+	.logo img {
+		width: 75px;
+		height: 75px;
+		display: inline-flex
+}
+	header ul li {
+		display: inline-block;
+		padding: 0 1.4em 0 0;
+		font-size: 1.3em;
+		padding-top: 5%;
+		font-weight: 500
+}
+	header ul li a {
+		text-decoration: none;
+		color: rgba(255, 247, 0, .95);
+		-webkit-transition: all .2s linear;
+		-moz-transition: all .2s linear;
+		-ms-transition: all .2s linear;
+		-o-transition: all .2s linear;
+		transition: all .2s linear
+}
+	li a.active {
+		color: #000;
+		border-bottom: 2px solid #000;
+		font-weight: 500
+}
+	a {
+		text-decoration: none
+}
+	a:visited #title {
+		color: #343333
+}
+}
+@media screen and (min-width: 2200px) {
+	#text {
+		margin-left: 38.5%;
+	}
+}
+@media screen and (min-width: 2400px) {
+	#text {
+		margin-left: 39%;
+	}
+}
+/* @media only screen and (max-height: 900px) and (min-width: 1200px) {
+	#iphoneHome {
+		width: 95%;
+		margin-left: 23%;
+		margin-top: 25%;
+	}
+	#text {
+		margin-left: 27%;
+		margin-top: 67%;
+		font-size: 1.1em;
+	}
+}
+*/
+/* @media only screen and (max-height: 920px) and (min-width: 900px) {
+	#iphoneHome {
+		width: 85%;
+		margin-left: 24%;
+		margin-top: 19%;
+	}
+	#text {
+		margin-left: 31.5%;
+		margin-top: 54%;
+		font-size: 1em;
+	}
+}
+*/
+@media print {
+	*, :after, :before {
+		background: 0 0 !important;
+		color: #000 !important;
+		-webkit-box-shadow: none !important;
+		box-shadow: none !important;
+		text-shadow: none !important
+}
+	a, a:visited {
+		text-decoration: underline
+}
+	a[href]:after {
+		content: " ("attr(href) ")"
+}
+	a[href^="#"]:after, a[href^="javascript:"]:after {
+		content: ""
+}
+	img {
+		page-break-inside: avoid
+}
+	h2, h3, p {
+		orphans: 3;
+		widows: 3
+}
+	h2, h3 {
+		page-break-after: avoid
+}
+}
